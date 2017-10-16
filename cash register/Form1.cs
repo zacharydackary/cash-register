@@ -23,11 +23,11 @@ namespace cash_register
         int burgerPurchase = 0;
         int friesPurchase = 0;
         int drinksPurchase = 0;
-        int totalOrder = 0;
-        int taxAmt = 0;
-        int tendered = 0;
-        int totalwTax = 0;
-        int change = 0;
+        double totalOrder = 0;
+        double taxAmt = 0;
+        double tendered = 0;
+        double totalTax = 0;
+        double change = 0;
 
         public Form1()
         {
@@ -39,16 +39,21 @@ namespace cash_register
             burgerPurchase = Convert.ToInt16(textBox1.Text);
             friesPurchase = Convert.ToInt16(textBox2.Text);
             drinksPurchase = Convert.ToInt16(textBox3.Text);
-
-            totalOrder = burgerPurchase + friesPurchase + drinksPurchase;
-            totalwTax = Convert.ToInt16(totalOrder * TAX);
-            taxAmt = totalwTax - totalOrder;
-
+            //#of items * the amount they cost
+            totalOrder = burgerPurchase * BURGER_COST 
+                + friesPurchase * FRIES_COST
+                + drinksPurchase * DRINK_COST;
+            totalTax = totalOrder * TAX;
+            taxAmt = totalOrder + totalTax;
+            
             label9.Text = ""+totalOrder;
-            label10.Text = ""+taxAmt;
-            label11.Text = ""+totalwTax;
+            label10.Text = ""+totalTax;
+            label11.Text = ""+taxAmt;
 
+            tendered = Convert.ToInt16(textBox4.Text);
+            change = tendered - taxAmt;
 
+            label12.Text = "" + change;
 
 
 
