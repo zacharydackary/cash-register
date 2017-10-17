@@ -25,9 +25,11 @@ namespace cash_register
         int drinksPurchase = 0;
         double totalOrder = 0;
         double taxAmt = 0;
-        double tendered = 0;
+        string tendered;
         double totalTax = 0;
         double change = 0;
+        private object formGraphics;
+        private readonly Brush arial;
 
         public Form1()
         {
@@ -49,19 +51,22 @@ namespace cash_register
             label9.Text = ""+totalOrder;
             label10.Text = ""+totalTax;
             label11.Text = ""+taxAmt;
-
-            tendered = Convert.ToInt16(textBox4.Text);
-            change = tendered - taxAmt;
-
-            label12.Text = "" + change;
-
-
-
-
+            
         }
         private void tenderedButton_Click(object sender, EventArgs e)
         {
+            tendered = textBox4.Text;
+            change = (Convert.ToDouble(tendered) - taxAmt);
 
+            label12.Text = "" + change;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Graphics formGraphics = this.CreateGraphics();
+
+            formGraphics.DrawString("Mick Dons", Font, 10, 10);
         }
     }
 }
