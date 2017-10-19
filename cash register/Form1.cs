@@ -18,7 +18,7 @@ namespace cash_register
         const double BURGER_COST = 2.49;
         const double FRIES_COST = 1.89;
         const double DRINK_COST = 0.99;
-        const double TAX = (0.13);
+        const double TAX = (0.13); 
 
         //global variables
         int burgerPurchase = 0;
