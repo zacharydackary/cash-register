@@ -82,5 +82,11 @@
   <ItemGroup>
     <None Include="Resources\micky.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Typewriter Sound Effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

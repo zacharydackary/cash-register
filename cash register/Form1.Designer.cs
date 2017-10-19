@@ -37,7 +37,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.foodButton = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -136,15 +134,6 @@
             this.foodButton.Text = "Calculate Totals";
             this.foodButton.UseVisualStyleBackColor = true;
             this.foodButton.Click += new System.EventHandler(this.foodButton_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(203, 87);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(248, 297);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -278,7 +267,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.foodButton);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -290,7 +278,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +294,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button foodButton;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
